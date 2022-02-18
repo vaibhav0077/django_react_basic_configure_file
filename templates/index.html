@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+    <h1 class='django_class'>Django Template</h1>
+    <div id="like_button_container"></div>
+
+
+
+
+
+    <!-- Load React Libraries -->
+    <script src="{% static 'react/react.development.js' %}"></script>
+    <script src="{% static 'react/react-dom.development.js' %}"></script>
+    <!-- JSX support-->
+    <script src="{% static 'react/babel.min.js' %}"></script>
+
+    <!-- Load React Component That are used -->
+
+    <script src='{% static "/js/like_button.js" %}' type="text/babel"></script>
+</body>
+</html>
